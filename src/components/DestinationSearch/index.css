@@ -1,0 +1,59 @@
+/* Write your CSS here */
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  font-family: 'Roboto';
+}
+
+.search-box {
+  display: flex;
+  padding: 10px;
+  max-width: 210px;
+  background-color: #f1f5f9;
+  padding-left: 10px;
+  border: 0px solid;
+  border-radius: 4px;
+}
+
+.inputStyle {
+  height: 30px;
+  width: 75%;
+  background-color: #f1f5f9;
+  padding-left: 10px;
+  border: 0px;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.search-img {
+  height: 30px;
+  width: 30px;
+}
+
+.card-container {
+  margin-top: 10px;
+  min-width: 300px;
+  display: flex;
+
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 576px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
